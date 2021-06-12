@@ -15,13 +15,16 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
+            <!-- image goes here. Using v-bind: dynamically bind an attribute (src) to an expression ("image") -->
+            <img v-bind:src='image'> 
+            <!-- <img :src='image'>   //this is a shortcut for the above one -->
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
           </div>
         </div>
       </div>
+      <a :href='url'>this is a URL</a>
     </div>
 
     <!-- Import App -->
